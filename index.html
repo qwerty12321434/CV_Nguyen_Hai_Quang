@@ -5,134 +5,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Nguyễn Hải Quang</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .cv-container {
-            display: flex;
-            width: 800px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .left-section {
-            width: 35%;
-            background: #d8f1ff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .left-section img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .right-section {
-            width: 65%;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #007bff;
-            font-size: 22px;
-        }
-
-        h2 {
-            font-size: 18px;
-            color: #007bff;
-        }
-
-        p,
-        ul {
-            font-size: 14px;
-            color: #333;
-            align-content: center;
-        }
-
-      
-
-        .section {
-            margin-bottom: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="cv-container">
         <div class="left-section">
-            <img src="./assets/images.jpg" alt="Nguyễn Hải Quang">
-            <h1>Nguyễn Hải Quang</h1>
-            <p style="color: #007bff;">DATA ANALYST</p>
-            <hr>
-            <h2>Thông tin cá nhân</h2>
-            <p>📅 06/20/2004</p>
-            <p>👩 Nam</p>
-            <p>📞 (+84) 8292998</p>
-            <p>✉️ quangnh2004@gmail.com</p>
-            <p>📍 Cầu Giấy, Hà Nội</p>
-            <hr>
-            <h2>Học vấn</h2>
-                <p><strong>Học viện công nghệ bưu chính viễn thông - PTIT</strong> - 2022 - 2027</p>
-                <p>Chuyên ngành: Công nghệ thông tin</p>
-                <p><strong>BK</strong> - 2024</p>
-                <p>Khoá học Data Analyst</p>
-                <p><strong>Dứa Data</strong> - 2025</p>
-                <p>Khóa học Business Analyst</p>
-            <hr>
-            <h2>Sở thích</h2>
-            <p>Teambuilding, thể thao, ngủ,chơi game</p>
+            <img src="/api/placeholder/150/150" alt="Nguyễn Hải Quang" class="profile-img">
+            
+            <div class="name-title">
+                <h1>Nguyễn Hải Quang</h1>
+                <p>Data Analyst</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Thông tin liên hệ</h2>
+                <p><span>📅</span> 20/06/2004</p>
+                <p><span>👨</span> Nam</p>
+                <p><span>📞</span> (+84) 82 929 9874</p>
+                <p><span>✉️</span> quangnh2004@gmail.com</p>
+                <p><span>📍</span> Cầu Giấy, Hà Nội</p>
+                <p><span>🔗</span> linkedin.com/in/quangnh2004</p>
+            </div>
+            
+            <div class="education">
+                <h2>Học vấn</h2>
+                <div class="education-item">
+                    <p>Học viện Công nghệ Bưu chính Viễn thông (PTIT)</p>
+                    <p>Cử nhân Công nghệ thông tin</p>
+                    <p>2022 - 2026 (Dự kiến)</p>
+                    <p>GPA: 3.4/4.0</p>
+                </div>
+            </div>
+
+            <div class="education">
+                <h2>Chứng chỉ</h2>
+                <div class="cert-item">
+                    <p class="cert-title">Professional Data Analyst</p>
+                    <p class="cert-issuer">BK Academy, 2024</p>
+                </div>
+                <div class="cert-item">
+                    <p class="cert-title">Business Analysis Professional</p>
+                    <p class="cert-issuer">Dứa Data, 2025</p>
+                </div>
+                <div class="cert-item">
+                    <p class="cert-title">Advanced SQL for Data Analysis</p>
+                    <p class="cert-issuer">DataCamp, 2023</p>
+                </div>
+                <div class="cert-item">
+                    <p class="cert-title">IELTS Academic</p>
+                    <p class="cert-issuer">British Council, 2023 - Điểm 8.0</p>
+                </div>
+            </div>
+            
+            <div class="hobbies">
+                <h2>Sở thích</h2>
+                <div class="hobby-tag">Phân tích dữ liệu</div>
+                <div class="hobby-tag">Đọc sách</div>
+                <div class="hobby-tag">Tennis</div>
+                <div class="hobby-tag">Chơi cờ</div>
+            </div>
         </div>
+        
         <div class="right-section">
-            <div class="section">
-                <h2>Mục tiêu nghề nghiệp</h2>
-                <p>2 năm kinh nghiệm trong lĩnh vực phân tích dữ liệu và giao tiếp khách hàng...</p>
+            <div class="section objective">
+                <h2>Tóm tắt chuyên môn</h2>
+                <p>Chuyên viên phân tích dữ liệu với hơn 2 năm kinh nghiệm trong việc thu thập, xử lý và phân tích dữ liệu để cung cấp những hiểu biết kinh doanh có giá trị. Thành thạo nhiều công cụ phân tích dữ liệu như SQL, Python, Power BI và Excel nâng cao. Có khả năng chuyển đổi dữ liệu phức tạp thành thông tin có giá trị giúp cải thiện hiệu quả kinh doanh và hỗ trợ ra quyết định dựa trên dữ liệu.</p>
             </div>
+            
             <div class="section">
-                <h2>Các kỹ năng</h2>
-                <ul class="kn">
-                    <li>Kỹ năng phân tích dữ liệu (Data Analyst Skills)</li>
-                    <li>Kỹ năng phân tích kinh doanh (Business Analyst Skills)</li>
-                    <li>Kỹ năng giao tiếp & làm việc với nhiều bên liên quan</li>
-                    <li>Kỹ năng công nghệ & công cụ hỗ trợ</li>
-                    <li>Tư duy tổng hợp & chiến lược</li>
-                    <li>IELTS 9.0</li>
-                </ul>
+                <h2>Kỹ năng chuyên môn</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Phân tích dữ liệu & Trực quan hóa</div>
+                    <div class="skill-item">Phân tích kinh doanh & Báo cáo</div>
+                    <div class="skill-item">SQL & Quản lý cơ sở dữ liệu</div>
+                    <div class="skill-item">Python (Pandas, NumPy, Matplotlib)</div>
+                    <div class="skill-item">Power BI & Tableau</div>
+                    <div class="skill-item">Excel nâng cao & VBA</div>
+                    <div class="skill-item">Thống kê ứng dụng</div>
+                    <div class="skill-item">Machine Learning cơ bản</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Kỹ năng mềm</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Giao tiếp hiệu quả</div>
+                    <div class="skill-item">Thuyết trình chuyên nghiệp</div>
+                    <div class="skill-item">Tư duy phân tích & giải quyết vấn đề</div>
+                    <div class="skill-item">Làm việc nhóm đa chức năng</div>
+                    <div class="skill-item">Quản lý thời gian</div>
+                    <div class="skill-item">Tư duy chiến lược & tổng hợp</div>
+                </div>
+            </div>
+            
+            <div class="section">
                 <h2>Ngôn ngữ</h2>
-                <ul>
-                    <li>Tiếng Việt</li>
-                    <li>Tiếng Anh</li>
-                    <li>Tiếng Pháp</li>
-                    <li>Tiếng Đức</li>
-                    <li>Tiếng Nhật</li>
-                    <li>.....</li>
-                </ul>
+                <div class="language-item">
+                    <div class="language-name">Tiếng Việt (Bản địa)</div>
+                    <div class="language-level">
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Tiếng Anh (Thành thạo - IELTS 8.0)</div>
+                    <div class="language-level">
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Tiếng Pháp (Trung cấp)</div>
+                    <div class="language-level">
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
             </div>
+            
             <div class="section">
-                <h2>Kinh nghiệm làm việc</h2>
-                <p><strong>Phân tích dữ liệu</strong> - Công ty ABC (08/2022 - 08/2024):</p>
-                <ul>
-                    <li>Xác định dữ liệu cần phân tích</li>
-                    <li>Thu thập dữ liệu</li>
-                    <li>Làm sạch dữ liệu để chuẩn bị phân tích</li>
-                    <li>Phân tích dữ liệu</li>
-                    <li>Diễn giải kết quả phân tích</li>
-                </ul>
-                <p><strong>Trợ Lý Giám Sát Nhận Hàng</strong> - Công ty BCD (08/2022 - 07/2023)</p>
-                <ul>
-                    <li>Hỗ trợ theo dõi và điều hành quy trình nhận hàng</li>
-                    <li>Sắp xếp và điều động nhân sự hợp lý</li>
-                </ul>
+                <h2>Kinh nghiệm chuyên môn</h2>
+                <div class="experience-item">
+                    <div class="experience-title">Chuyên viên Phân tích Dữ liệu - Công ty Công nghệ ABC</div>
+                    <div class="experience-period">08/2022 - 08/2024</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Phân tích dữ liệu khách hàng và phát hiện các xu hướng quan trọng, giúp tăng tỷ lệ giữ chân khách hàng lên 15%</li>
+                            <li>Xây dựng và duy trì các dashboard phân tích trong Power BI, giúp ban lãnh đạo theo dõi KPI hiệu quả</li>
+                            <li>Phát triển quy trình ETL tự động để tích hợp dữ liệu từ nhiều nguồn, tiết kiệm 10 giờ làm việc mỗi tuần</li>
+                            <li>Thực hiện phân tích dữ liệu chuyên sâu để xác định cơ hội tối ưu hóa doanh thu, đóng góp vào việc tăng doanh thu 12%</li>
+                            <li>Hợp tác với các nhóm sản phẩm và marketing để cung cấp phân tích dữ liệu hỗ trợ ra quyết định</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Trợ lý Phân tích Vận hành - Công ty Logistics BCD</div>
+                    <div class="experience-period">08/2022 - 07/2023</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Phân tích quy trình vận hành và nhận diện các điểm nghẽn, đề xuất giải pháp giúp cắt giảm 20% thời gian xử lý đơn hàng</li>
+                            <li>Tối ưu hóa việc phân bổ nhân sự dựa trên phân tích dữ liệu lịch sử, góp phần tăng năng suất nhóm lên 25%</li>
+                            <li>Xây dựng các báo cáo phân tích hiệu suất vận hành bằng Excel và Power BI để theo dõi và cải thiện hiệu quả</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Dự án tiêu biểu</h2>
+                <div class="experience-item">
+                    <div class="experience-title">Phân tích hành vi khách hàng và dự đoán tỉ lệ rời bỏ</div>
+                    <div class="experience-period">03/2024 - 06/2024</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Phát triển mô hình Machine Learning để dự đoán khách hàng có nguy cơ rời bỏ với độ chính xác 85%</li>
+                            <li>Phân tích dữ liệu của hơn 50.000 khách hàng để xác định các yếu tố chính ảnh hưởng đến sự hài lòng</li>
+                            <li>Thiết kế báo cáo trực quan trong Power BI, giúp đội ngũ chăm sóc khách hàng ưu tiên các trường hợp cần can thiệp</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
